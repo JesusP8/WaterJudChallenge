@@ -8,7 +8,7 @@ const WaterJugChallenge = () => {
 
   const solveWaterJugChallenge = () => {
     if (measureZ % gcd(bucketX, bucketY) !== 0) {
-      setSolution('Not Possible');
+      setSolution('No Solution');
       return;
     }
 
@@ -38,7 +38,7 @@ const WaterJugChallenge = () => {
         iterationCount++;
       }
       if (iterationCount === maxIterations) {
-        setSolution('Not Possible');
+        setSolution('No Solution');
         return;
       }
     }
